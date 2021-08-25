@@ -1,20 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// components lists
 import { CustomersComponent } from './customers.component';
-import { CustomerListComponent } from './customer-list/customer-list.component'; // this is the component
+import { CustomerListComponent } from './customer-list/customer-list.component'; 
+import {FilterTextboxComponent} from './customer-list/filter-textcomponents'
 
 @NgModule({
   imports: [
     CommonModule,
   ],
   declarations: [
+    // this is the component
     CustomersComponent,
-    CustomerListComponent // this is the component
+    CustomerListComponent,
+    FilterTextboxComponent 
   ],
    exports: [
      CustomersComponent,
-     CustomerListComponent
+     CustomerListComponent,
+     FilterTextboxComponent
    ]
 })
 
