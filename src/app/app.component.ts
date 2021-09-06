@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <app-customers></app-customers>
 `,
-  styleUrls: ['./app.component.css']
+  // styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   title = 'my-appee';
