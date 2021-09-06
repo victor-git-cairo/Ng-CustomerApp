@@ -41,8 +41,7 @@ export class DataService {
           catchError(this.handleError)
         );
     }
-
-
+    
     private handleError(error: any) {
       console.error('server error:', error);
       if (error.error instanceof Error) {

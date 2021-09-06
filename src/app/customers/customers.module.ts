@@ -7,12 +7,17 @@ import { SharedModule } from '../shared/shared.modules';
 import { CustomersComponent } from './customers.component';
 import { CustomerListComponent } from './customer-list/customer-list.component'; 
 import {FilterTextboxComponent} from './customer-list/filter-textcomponents';
+import { CustomersRoutingModule } from './customer-routingmod'
+import { OrdersComponent } from '../orders/orders.component';
+import { OrdersModule } from '../orders/orders.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    FormsModule 
+    FormsModule,
+    CustomersRoutingModule,
+    OrdersModule 
   ],
   declarations: [
     // this is the component
@@ -23,7 +28,8 @@ import {FilterTextboxComponent} from './customer-list/filter-textcomponents';
    exports: [
      CustomersComponent,
      CustomerListComponent,
-     FilterTextboxComponent
+     FilterTextboxComponent,
+     OrdersComponent
    ]
 })
 
